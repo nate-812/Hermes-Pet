@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12404F33AB8DEBB2F233847D /* 趴下动作.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9B56DC968B08E1A39C4E289 /* 趴下动作.mov */; };
+		154CAE0C54D9C97684DCFF16 /* AgentBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C84B6D4176016EF6FA56DA0 /* AgentBridge.swift */; };
+		247243D3E91EBD058710EC9B /* ChatWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC697AF6457463AD7105D6 /* ChatWindowController.swift */; };
+		2AA98689E5EADBBAA5EF0CDB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955901B0F91FD2A301817B8B /* ChatView.swift */; };
+		2C19EBFC886282419FD4946A /* NotchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651751BD9EF72AA8F5B81162 /* NotchWindow.swift */; };
+		30908958B4F8DBFD722C465C /* HermesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DBD4E86C2D34368167567 /* HermesProvider.swift */; };
+		33D620BCA3CC8447937A5EA5 /* LiquidGlassModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8DA5BE193BB69E04A5939D /* LiquidGlassModifier.swift */; };
+		3854E8FD66C0523DEB36AB91 /* HermesRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E8B1173B22AAE7FDD8DFA /* HermesRPC.swift */; };
+		49EFC6775A1A5E5525CC896E /* HermesSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005040986DD1488A1F566306 /* HermesSession.swift */; };
+		4F1EF9CC79A06CEABBACB195 /* NotchStateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D452365231479A5F70F13C5 /* NotchStateCoordinator.swift */; };
+		57CEA62F0BC53B691A93B861 /* 待机.mov in Resources */ = {isa = PBXBuildFile; fileRef = 00640A31EB16B63987A90907 /* 待机.mov */; };
+		6472A71E7A5429F84F555438 /* DesktopPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */; };
+		669580FA52DE980C91C7CC07 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453EC4CCA09F4D5A1941DCB /* SessionStore.swift */; };
+		688BA6581212DE2074AEB262 /* 正常工作.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0269AA43F5F380FC5DC2C35D /* 正常工作.mov */; };
+		75011635529BD03F117F43B0 /* 疯狂状态.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9EE3417376F2A6A737D68651 /* 疯狂状态.mov */; };
+		804BC61F232C17A3FDA3BB55 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0491E22D36FF757ABACADC /* EventBus.swift */; };
+		804D09634779A3FE1F300126 /* HermesMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB667F13B1B0BC0D8AB1360 /* HermesMateTests.swift */; };
+		8359CBA86C159C1C0A9CC4EF /* 纯睡.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0B699FF43989815B10C48ABA /* 纯睡.mov */; };
+		A349EA116B6765904D6CAF6B /* SpriteEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426DFEE72564B2DFAB4EB15 /* SpriteEngine.swift */; };
+		A35FD76DEEBDFF8D9104CCF5 /* pet_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7D801894752AFB9E8D40E /* pet_video.mp4 */; };
+		A3AFDB233C76868CF7B2EC0F /* VideoPetEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CCC85495253565FB7AD1B2 /* VideoPetEngine.swift */; };
+		A5842C5D387C432EAC24E279 /* 戴帽子进入工作状态.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3F456DB68E522826C770095E /* 戴帽子进入工作状态.mov */; };
+		B38D81D4D3AE3982E992C1C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF13A1ECDBFAB0E495A44AF /* AppDelegate.swift */; };
+		BAB548B765D3C1AF542F7193 /* HermesEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBA843B6581533E5917A405 /* HermesEvent.swift */; };
+		BEC9CD47086A4D95FAE04787 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07ED50BA065038D0DA00DB7 /* MenuBarController.swift */; };
+		CAE768B2E85D8698DBEB6E9C /* 关电脑.mov in Resources */ = {isa = PBXBuildFile; fileRef = 15B6184E74297896331EE3DF /* 关电脑.mov */; };
+		CBFDA01459E29F74E9F7EA30 /* HermesMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4BCD2E3BC3E23BCE6133E9 /* HermesMateApp.swift */; };
+		D52379EB1B4047981DBEB1CB /* NotchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA9071D95569C2F3838CC73 /* NotchContentView.swift */; };
+		FDF935265C491983B718C0BB /* PikachuPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D9E560BB4345DDDCE7EF5 /* PikachuPetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D25A78E8F855CD2949D3A4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61F66F0DF0F4405D658E0E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 053ECF2EEE5F19B216527D7C;
+			remoteInfo = HermesMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005040986DD1488A1F566306 /* HermesSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesSession.swift; sourceTree = "<group>"; };
+		00640A31EB16B63987A90907 /* 待机.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "待机.mov"; sourceTree = "<group>"; };
+		0269AA43F5F380FC5DC2C35D /* 正常工作.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "正常工作.mov"; sourceTree = "<group>"; };
+		0B699FF43989815B10C48ABA /* 纯睡.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "纯睡.mov"; sourceTree = "<group>"; };
+		0BB667F13B1B0BC0D8AB1360 /* HermesMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesMateTests.swift; sourceTree = "<group>"; };
+		0D452365231479A5F70F13C5 /* NotchStateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchStateCoordinator.swift; sourceTree = "<group>"; };
+		15B6184E74297896331EE3DF /* 关电脑.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "关电脑.mov"; sourceTree = "<group>"; };
+		2EF7D801894752AFB9E8D40E /* pet_video.mp4 */ = {isa = PBXFileReference; path = pet_video.mp4; sourceTree = "<group>"; };
+		3C0491E22D36FF757ABACADC /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
+		3F456DB68E522826C770095E /* 戴帽子进入工作状态.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "戴帽子进入工作状态.mov"; sourceTree = "<group>"; };
+		4453EC4CCA09F4D5A1941DCB /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		5A2DBD4E86C2D34368167567 /* HermesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesProvider.swift; sourceTree = "<group>"; };
+		5AB0C1A6C261D4049DA7000C /* HermesMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5E8B1173B22AAE7FDD8DFA /* HermesRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesRPC.swift; sourceTree = "<group>"; };
+		651751BD9EF72AA8F5B81162 /* NotchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchWindow.swift; sourceTree = "<group>"; };
+		6DF13A1ECDBFAB0E495A44AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70CCC85495253565FB7AD1B2 /* VideoPetEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPetEngine.swift; sourceTree = "<group>"; };
+		7B4BCD2E3BC3E23BCE6133E9 /* HermesMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesMateApp.swift; sourceTree = "<group>"; };
+		8C84B6D4176016EF6FA56DA0 /* AgentBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentBridge.swift; sourceTree = "<group>"; };
+		955901B0F91FD2A301817B8B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		9E8DA5BE193BB69E04A5939D /* LiquidGlassModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassModifier.swift; sourceTree = "<group>"; };
+		9EE3417376F2A6A737D68651 /* 疯狂状态.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "疯狂状态.mov"; sourceTree = "<group>"; };
+		A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPet.swift; sourceTree = "<group>"; };
+		ABBA843B6581533E5917A405 /* HermesEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesEvent.swift; sourceTree = "<group>"; };
+		BDBD496EA579F535CB118F1C /* HermesMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HermesMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C07ED50BA065038D0DA00DB7 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		C9B56DC968B08E1A39C4E289 /* 趴下动作.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "趴下动作.mov"; sourceTree = "<group>"; };
+		DEDC697AF6457463AD7105D6 /* ChatWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowController.swift; sourceTree = "<group>"; };
+		E750CA5F78590C96FCC2AC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB2D9E560BB4345DDDCE7EF5 /* PikachuPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikachuPetView.swift; sourceTree = "<group>"; };
+		F426DFEE72564B2DFAB4EB15 /* SpriteEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteEngine.swift; sourceTree = "<group>"; };
+		FA8EAE7BE87DED19E12E37A5 /* HermesMate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HermesMate.entitlements; sourceTree = "<group>"; };
+		FDA9071D95569C2F3838CC73 /* NotchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2A3FE19989FCCE61350A169B /* DesktopPet */ = {
+			isa = PBXGroup;
+			children = (
+				A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */,
+			);
+			path = DesktopPet;
+			sourceTree = "<group>";
+		};
+		3C00D2286E6A51D6103A270F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABBA843B6581533E5917A405 /* HermesEvent.swift */,
+				5B5E8B1173B22AAE7FDD8DFA /* HermesRPC.swift */,
+				005040986DD1488A1F566306 /* HermesSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4874C2C23133256D286DA376 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6DF13A1ECDBFAB0E495A44AF /* AppDelegate.swift */,
+				7B4BCD2E3BC3E23BCE6133E9 /* HermesMateApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B98D3FF37B7480E1CE75DB4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3C0491E22D36FF757ABACADC /* EventBus.swift */,
+				4453EC4CCA09F4D5A1941DCB /* SessionStore.swift */,
+				3C00D2286E6A51D6103A270F /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		83FF581D44C2DC61E11F8A1E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B437D815B489B49CA6EC6651 /* Chat */,
+				2A3FE19989FCCE61350A169B /* DesktopPet */,
+				A3ADFE6C8F43CCB5F0B3B4C3 /* MenuBar */,
+				919A3F787A912F10E570AD11 /* Notch */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		919A3F787A912F10E570AD11 /* Notch */ = {
+			isa = PBXGroup;
+			children = (
+				FDA9071D95569C2F3838CC73 /* NotchContentView.swift */,
+				0D452365231479A5F70F13C5 /* NotchStateCoordinator.swift */,
+				651751BD9EF72AA8F5B81162 /* NotchWindow.swift */,
+				EB2D9E560BB4345DDDCE7EF5 /* PikachuPetView.swift */,
+				F426DFEE72564B2DFAB4EB15 /* SpriteEngine.swift */,
+				70CCC85495253565FB7AD1B2 /* VideoPetEngine.swift */,
+			);
+			path = Notch;
+			sourceTree = "<group>";
+		};
+		937077DAA0D93D9C734427E0 = {
+			isa = PBXGroup;
+			children = (
+				A8EBE04FE443019F597C09E1 /* HermesMate */,
+				A1A3E483AD5F5943A1B70ADE /* HermesMateTests */,
+				D54FFD7C2EE35E535DCDDC4C /* Products */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		9D140309A641D2243B1945D9 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				8C84B6D4176016EF6FA56DA0 /* AgentBridge.swift */,
+				5A2DBD4E86C2D34368167567 /* HermesProvider.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		A1A3E483AD5F5943A1B70ADE /* HermesMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB667F13B1B0BC0D8AB1360 /* HermesMateTests.swift */,
+			);
+			path = HermesMateTests;
+			sourceTree = "<group>";
+		};
+		A3ADFE6C8F43CCB5F0B3B4C3 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				C07ED50BA065038D0DA00DB7 /* MenuBarController.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		A8EBE04FE443019F597C09E1 /* HermesMate */ = {
+			isa = PBXGroup;
+			children = (
+				4874C2C23133256D286DA376 /* App */,
+				9D140309A641D2243B1945D9 /* Bridge */,
+				4B98D3FF37B7480E1CE75DB4 /* Core */,
+				E809155BC1D6E8606FC97442 /* Resources */,
+				83FF581D44C2DC61E11F8A1E /* UI */,
+			);
+			path = HermesMate;
+			sourceTree = "<group>";
+		};
+		B437D815B489B49CA6EC6651 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				955901B0F91FD2A301817B8B /* ChatView.swift */,
+				DEDC697AF6457463AD7105D6 /* ChatWindowController.swift */,
+				9E8DA5BE193BB69E04A5939D /* LiquidGlassModifier.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		D54FFD7C2EE35E535DCDDC4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDBD496EA579F535CB118F1C /* HermesMate.app */,
+				5AB0C1A6C261D4049DA7000C /* HermesMateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E809155BC1D6E8606FC97442 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EAE7BE87DED19E12E37A5 /* HermesMate.entitlements */,
+				E750CA5F78590C96FCC2AC2C /* Info.plist */,
+				2EF7D801894752AFB9E8D40E /* pet_video.mp4 */,
+				FBFA79FA1AE2524823F174AD /* pet_clips */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBFA79FA1AE2524823F174AD /* pet_clips */ = {
+			isa = PBXGroup;
+			children = (
+				0B699FF43989815B10C48ABA /* 纯睡.mov */,
+				00640A31EB16B63987A90907 /* 待机.mov */,
+				3F456DB68E522826C770095E /* 戴帽子进入工作状态.mov */,
+				9EE3417376F2A6A737D68651 /* 疯狂状态.mov */,
+				15B6184E74297896331EE3DF /* 关电脑.mov */,
+				C9B56DC968B08E1A39C4E289 /* 趴下动作.mov */,
+				0269AA43F5F380FC5DC2C35D /* 正常工作.mov */,
+			);
+			path = pet_clips;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		053ECF2EEE5F19B216527D7C /* HermesMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACD2B3867598DE3B6DBCDB5 /* Build configuration list for PBXNativeTarget "HermesMate" */;
+			buildPhases = (
+				4F25C60344FF0F40F110C221 /* Sources */,
+				17DB637D51A4013C44D0DACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HermesMate;
+			packageProductDependencies = (
+			);
+			productName = HermesMate;
+			productReference = BDBD496EA579F535CB118F1C /* HermesMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92D9A7026965BAA709F80710 /* HermesMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 227761C3A6C957927AE6EEAD /* Build configuration list for PBXNativeTarget "HermesMateTests" */;
+			buildPhases = (
+				69D2E7BA9FB9E16BE9E1F536 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE4D4A31356FDC4570E9192D /* PBXTargetDependency */,
+			);
+			name = HermesMateTests;
+			packageProductDependencies = (
+			);
+			productName = HermesMateTests;
+			productReference = 5AB0C1A6C261D4049DA7000C /* HermesMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61F66F0DF0F4405D658E0E0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					053ECF2EEE5F19B216527D7C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					92D9A7026965BAA709F80710 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C7969D84851637CD2EA58461 /* Build configuration list for PBXProject "HermesMate" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 937077DAA0D93D9C734427E0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D54FFD7C2EE35E535DCDDC4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				053ECF2EEE5F19B216527D7C /* HermesMate */,
+				92D9A7026965BAA709F80710 /* HermesMateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17DB637D51A4013C44D0DACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35FD76DEEBDFF8D9104CCF5 /* pet_video.mp4 in Resources */,
+				CAE768B2E85D8698DBEB6E9C /* 关电脑.mov in Resources */,
+				57CEA62F0BC53B691A93B861 /* 待机.mov in Resources */,
+				A5842C5D387C432EAC24E279 /* 戴帽子进入工作状态.mov in Resources */,
+				688BA6581212DE2074AEB262 /* 正常工作.mov in Resources */,
+				75011635529BD03F117F43B0 /* 疯狂状态.mov in Resources */,
+				8359CBA86C159C1C0A9CC4EF /* 纯睡.mov in Resources */,
+				12404F33AB8DEBB2F233847D /* 趴下动作.mov in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F25C60344FF0F40F110C221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154CAE0C54D9C97684DCFF16 /* AgentBridge.swift in Sources */,
+				B38D81D4D3AE3982E992C1C9 /* AppDelegate.swift in Sources */,
+				2AA98689E5EADBBAA5EF0CDB /* ChatView.swift in Sources */,
+				247243D3E91EBD058710EC9B /* ChatWindowController.swift in Sources */,
+				6472A71E7A5429F84F555438 /* DesktopPet.swift in Sources */,
+				804BC61F232C17A3FDA3BB55 /* EventBus.swift in Sources */,
+				BAB548B765D3C1AF542F7193 /* HermesEvent.swift in Sources */,
+				CBFDA01459E29F74E9F7EA30 /* HermesMateApp.swift in Sources */,
+				30908958B4F8DBFD722C465C /* HermesProvider.swift in Sources */,
+				3854E8FD66C0523DEB36AB91 /* HermesRPC.swift in Sources */,
+				49EFC6775A1A5E5525CC896E /* HermesSession.swift in Sources */,
+				33D620BCA3CC8447937A5EA5 /* LiquidGlassModifier.swift in Sources */,
+				BEC9CD47086A4D95FAE04787 /* MenuBarController.swift in Sources */,
+				D52379EB1B4047981DBEB1CB /* NotchContentView.swift in Sources */,
+				4F1EF9CC79A06CEABBACB195 /* NotchStateCoordinator.swift in Sources */,
+				2C19EBFC886282419FD4946A /* NotchWindow.swift in Sources */,
+				FDF935265C491983B718C0BB /* PikachuPetView.swift in Sources */,
+				669580FA52DE980C91C7CC07 /* SessionStore.swift in Sources */,
+				A349EA116B6765904D6CAF6B /* SpriteEngine.swift in Sources */,
+				A3AFDB233C76868CF7B2EC0F /* VideoPetEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D2E7BA9FB9E16BE9E1F536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804D09634779A3FE1F300126 /* HermesMateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE4D4A31356FDC4570E9192D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 053ECF2EEE5F19B216527D7C /* HermesMate */;
+			targetProxy = 4D25A78E8F855CD2949D3A4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A996BC604A39B003C050FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HermesMate.app/Contents/MacOS/HermesMate";
+			};
+			name = Release;
+		};
+		49590F52062199F599B09177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hermesmate.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		669BD97F6ECB66E3B203486C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HermesMate/Resources/HermesMate.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HermesMate/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = HermesMate;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		79F59212B5495C921D602CDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HermesMate/Resources/HermesMate.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HermesMate/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = HermesMate;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D74228A3B51FD2B9FB46DA91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hermesmate.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		E30663A0F4782ECD4436C3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HermesMate.app/Contents/MacOS/HermesMate";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		227761C3A6C957927AE6EEAD /* Build configuration list for PBXNativeTarget "HermesMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E30663A0F4782ECD4436C3F6 /* Debug */,
+				2A996BC604A39B003C050FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7969D84851637CD2EA58461 /* Build configuration list for PBXProject "HermesMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74228A3B51FD2B9FB46DA91 /* Debug */,
+				49590F52062199F599B09177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DACD2B3867598DE3B6DBCDB5 /* Build configuration list for PBXNativeTarget "HermesMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F59212B5495C921D602CDF /* Debug */,
+				669BD97F6ECB66E3B203486C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61F66F0DF0F4405D658E0E0D /* Project object */;
+}

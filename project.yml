@@ -1,0 +1,67 @@
+name: HermesMate
+options:
+  bundleIdPrefix: com.hermesmate
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+  indentWidth: 4
+  tabWidth: 4
+  usesTabs: false
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    PRODUCT_BUNDLE_IDENTIFIER: com.hermesmate.app
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_HARDENED_RUNTIME: YES
+    SWIFT_STRICT_CONCURRENCY: complete
+
+targets:
+  HermesMate:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: HermesMate
+    info:
+      path: HermesMate/Resources/Info.plist
+      properties:
+        CFBundleName: HermesMate
+        CFBundleDisplayName: HermesMate
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleIconFile: AppIcon
+        NSHumanReadableDescription: "Hermes 的 macOS 可视化身体层"
+        LSMinimumSystemVersion: "$(MACOSX_DEPLOYMENT_TARGET)"
+        LSUIElement: true
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: false
+        NSMicrophoneUsageDescription: "语音输入功能需要麦克风权限"
+        NSScreenCaptureDescription: "截图问 AI 功能需要屏幕录制权限"
+    entitlements:
+      path: HermesMate/Resources/HermesMate.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+        com.apple.security.network.client: true
+    settings:
+      base:
+        PRODUCT_NAME: HermesMate
+        INFOPLIST_FILE: HermesMate/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: HermesMate/Resources/HermesMate.entitlements
+
+  HermesMateTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: HermesMateTests
+    dependencies:
+      - target: HermesMate
+    settings:
+      base:
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/HermesMate.app/Contents/MacOS/HermesMate"
