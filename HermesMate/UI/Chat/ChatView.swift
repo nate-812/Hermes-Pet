@@ -5,6 +5,7 @@ import SwiftUI
 
 struct ChatView: View {
     let agentBridge: AgentBridge
+    var showBackground: Bool = true
 
     @State private var inputText = ""
     @State private var isSending = false
@@ -16,7 +17,9 @@ struct ChatView: View {
     var body: some View {
         ZStack {
             // 流体背景
-            LiquidBackgroundView()
+            if showBackground {
+                LiquidBackgroundView()
+            }
 
             VStack(spacing: 0) {
                 // 顶部悬浮栏

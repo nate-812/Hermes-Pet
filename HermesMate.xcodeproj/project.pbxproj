@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12404F33AB8DEBB2F233847D /* 趴下动作.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9B56DC968B08E1A39C4E289 /* 趴下动作.mov */; };
 		154CAE0C54D9C97684DCFF16 /* AgentBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C84B6D4176016EF6FA56DA0 /* AgentBridge.swift */; };
+		16E70830EC259CB767D55220 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2860CD6CA99B50B6C63D85FD /* DashboardView.swift */; };
 		247243D3E91EBD058710EC9B /* ChatWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC697AF6457463AD7105D6 /* ChatWindowController.swift */; };
 		2AA98689E5EADBBAA5EF0CDB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955901B0F91FD2A301817B8B /* ChatView.swift */; };
 		2C19EBFC886282419FD4946A /* NotchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651751BD9EF72AA8F5B81162 /* NotchWindow.swift */; };
@@ -17,6 +18,7 @@
 		3854E8FD66C0523DEB36AB91 /* HermesRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E8B1173B22AAE7FDD8DFA /* HermesRPC.swift */; };
 		49EFC6775A1A5E5525CC896E /* HermesSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005040986DD1488A1F566306 /* HermesSession.swift */; };
 		4F1EF9CC79A06CEABBACB195 /* NotchStateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D452365231479A5F70F13C5 /* NotchStateCoordinator.swift */; };
+		56DFB612EBFE56CB7677C8FF /* ControlPanelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E7F877AA766DC6A6080981 /* ControlPanelWindow.swift */; };
 		57CEA62F0BC53B691A93B861 /* 待机.mov in Resources */ = {isa = PBXBuildFile; fileRef = 00640A31EB16B63987A90907 /* 待机.mov */; };
 		6472A71E7A5429F84F555438 /* DesktopPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */; };
 		669580FA52DE980C91C7CC07 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453EC4CCA09F4D5A1941DCB /* SessionStore.swift */; };
@@ -30,6 +32,8 @@
 		A3AFDB233C76868CF7B2EC0F /* VideoPetEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CCC85495253565FB7AD1B2 /* VideoPetEngine.swift */; };
 		A5842C5D387C432EAC24E279 /* 戴帽子进入工作状态.mov in Resources */ = {isa = PBXBuildFile; fileRef = 3F456DB68E522826C770095E /* 戴帽子进入工作状态.mov */; };
 		B38D81D4D3AE3982E992C1C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF13A1ECDBFAB0E495A44AF /* AppDelegate.swift */; };
+		B86A50AF845D4A244A365B88 /* ControlPanelComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C860E000802EFB2D3C62AA /* ControlPanelComponents.swift */; };
+		B97E8064944D06656052B82C /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ACE5391FD939FFFDD5C672 /* ControlPanelView.swift */; };
 		BAB548B765D3C1AF542F7193 /* HermesEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBA843B6581533E5917A405 /* HermesEvent.swift */; };
 		BEC9CD47086A4D95FAE04787 /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07ED50BA065038D0DA00DB7 /* MenuBarController.swift */; };
 		CAE768B2E85D8698DBEB6E9C /* 关电脑.mov in Resources */ = {isa = PBXBuildFile; fileRef = 15B6184E74297896331EE3DF /* 关电脑.mov */; };
@@ -55,11 +59,14 @@
 		0B699FF43989815B10C48ABA /* 纯睡.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "纯睡.mov"; sourceTree = "<group>"; };
 		0BB667F13B1B0BC0D8AB1360 /* HermesMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesMateTests.swift; sourceTree = "<group>"; };
 		0D452365231479A5F70F13C5 /* NotchStateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchStateCoordinator.swift; sourceTree = "<group>"; };
+		13E7F877AA766DC6A6080981 /* ControlPanelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelWindow.swift; sourceTree = "<group>"; };
 		15B6184E74297896331EE3DF /* 关电脑.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "关电脑.mov"; sourceTree = "<group>"; };
+		2860CD6CA99B50B6C63D85FD /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		2EF7D801894752AFB9E8D40E /* pet_video.mp4 */ = {isa = PBXFileReference; path = pet_video.mp4; sourceTree = "<group>"; };
 		3C0491E22D36FF757ABACADC /* EventBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
 		3F456DB68E522826C770095E /* 戴帽子进入工作状态.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "戴帽子进入工作状态.mov"; sourceTree = "<group>"; };
 		4453EC4CCA09F4D5A1941DCB /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		54ACE5391FD939FFFDD5C672 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		5A2DBD4E86C2D34368167567 /* HermesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesProvider.swift; sourceTree = "<group>"; };
 		5AB0C1A6C261D4049DA7000C /* HermesMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5E8B1173B22AAE7FDD8DFA /* HermesRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesRPC.swift; sourceTree = "<group>"; };
@@ -72,6 +79,7 @@
 		9E8DA5BE193BB69E04A5939D /* LiquidGlassModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassModifier.swift; sourceTree = "<group>"; };
 		9EE3417376F2A6A737D68651 /* 疯狂状态.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "疯狂状态.mov"; sourceTree = "<group>"; };
 		A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPet.swift; sourceTree = "<group>"; };
+		A6C860E000802EFB2D3C62AA /* ControlPanelComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelComponents.swift; sourceTree = "<group>"; };
 		ABBA843B6581533E5917A405 /* HermesEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesEvent.swift; sourceTree = "<group>"; };
 		BDBD496EA579F535CB118F1C /* HermesMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HermesMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07ED50BA065038D0DA00DB7 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
@@ -91,6 +99,16 @@
 				A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */,
 			);
 			path = DesktopPet;
+			sourceTree = "<group>";
+		};
+		2D862C570C5BA351A828AD7F /* ControlPanel */ = {
+			isa = PBXGroup;
+			children = (
+				A6C860E000802EFB2D3C62AA /* ControlPanelComponents.swift */,
+				54ACE5391FD939FFFDD5C672 /* ControlPanelView.swift */,
+				13E7F877AA766DC6A6080981 /* ControlPanelWindow.swift */,
+			);
+			path = ControlPanel;
 			sourceTree = "<group>";
 		};
 		3C00D2286E6A51D6103A270F /* Models */ = {
@@ -126,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B437D815B489B49CA6EC6651 /* Chat */,
+				2D862C570C5BA351A828AD7F /* ControlPanel */,
 				2A3FE19989FCCE61350A169B /* DesktopPet */,
 				A3ADFE6C8F43CCB5F0B3B4C3 /* MenuBar */,
 				919A3F787A912F10E570AD11 /* Notch */,
@@ -200,6 +219,7 @@
 			children = (
 				955901B0F91FD2A301817B8B /* ChatView.swift */,
 				DEDC697AF6457463AD7105D6 /* ChatWindowController.swift */,
+				2860CD6CA99B50B6C63D85FD /* DashboardView.swift */,
 				9E8DA5BE193BB69E04A5939D /* LiquidGlassModifier.swift */,
 			);
 			path = Chat;
@@ -344,6 +364,10 @@
 				B38D81D4D3AE3982E992C1C9 /* AppDelegate.swift in Sources */,
 				2AA98689E5EADBBAA5EF0CDB /* ChatView.swift in Sources */,
 				247243D3E91EBD058710EC9B /* ChatWindowController.swift in Sources */,
+				B86A50AF845D4A244A365B88 /* ControlPanelComponents.swift in Sources */,
+				B97E8064944D06656052B82C /* ControlPanelView.swift in Sources */,
+				56DFB612EBFE56CB7677C8FF /* ControlPanelWindow.swift in Sources */,
+				16E70830EC259CB767D55220 /* DashboardView.swift in Sources */,
 				6472A71E7A5429F84F555438 /* DesktopPet.swift in Sources */,
 				804BC61F232C17A3FDA3BB55 /* EventBus.swift in Sources */,
 				BAB548B765D3C1AF542F7193 /* HermesEvent.swift in Sources */,

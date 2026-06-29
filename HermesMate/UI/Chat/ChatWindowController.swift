@@ -24,21 +24,37 @@ final class ChatWindowController {
             return
         }
 
-        let chatView = ChatView(agentBridge: agentBridge)
-        let hostingController = NSHostingController(rootView: chatView)
+        let dashboardView = DashboardView(agentBridge: agentBridge)
+        let hostingController = NSHostingController(rootView: dashboardView)
+        hostingController.view.wantsLayer = true
+        hostingController.view.layer?.backgroundColor = NSColor.clear.cgColor
 
-        let window = NSWindow(contentViewController: hostingController)
-        window.title = "HermesMate"
-        window.setContentSize(NSSize(width: 910, height: 560))
-        window.styleMask = [.titled, .closable, .resizable, .miniaturizable, .fullSizeContentView]
-        window.titlebarAppearsTransparent = false
-        window.isMovableByWindowBackground = true
-        window.backgroundColor = .clear
-        window.minSize = NSSize(width: 700, height: 350)
-        window.level = .normal
-        window.center()
-        window.makeKeyAndOrderFront(nil)
+        let panel = NSPanel(contentViewController: hostingController)
+        panel.title = "HermesMate Dashboard"
+        panel.setContentSize(NSSize(width: 910, height: 560))
+        panel.styleMask = [.nonactivatingPanel, .fullSizeContentView, .closable, .resizable, .titled]
+        panel.titlebarAppearsTransparent = true
+        panel.titleVisibility = .hidden
+        panel.isMovableByWindowBackground = true
+        panel.backgroundColor = .clear
+        panel.hasShadow = false
+        panel.isOpaque = false
+        panel.minSize = NSSize(width: 800, height: 500)
+        panel.level = .floating
+        panel.hidesOnDeactivate = true // Light dismiss: hide when clicking outside
+        
+        // Add Esc key monitor for explicit close (from frontend skill guidance)
+        NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [weak panel] event in
+            if event.keyCode == 53 { // 53 is Esc key
+                panel?.close()
+                return nil
+            }
+            return event
+        }
 
-        self.window = window
+        panel.center()
+        panel.makeKeyAndOrderFront(nil)
+
+        self.window = panel
     }
 }

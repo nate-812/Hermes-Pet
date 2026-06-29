@@ -18,6 +18,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     // Desktop Pet Components
     private(set) var desktopPetPanel: DesktopPetPanel?
 
+    // Control Panel
+    private(set) var controlPanelWindow: ControlPanelWindow?
+
     func applicationDidFinishLaunching(_ notification: Notification) {
         // 不显示 Dock 图标
         NSApp.setActivationPolicy(.accessory)
@@ -42,6 +45,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         Task {
             await agentBridge.start()
         }
+        
+        // 初始化控制面板
+        setupControlPanel()
     }
     
     private func setupNotchWindow() {
@@ -133,5 +139,34 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     func openChatWindow() {
         chatWindowController?.showWindow()
+    }
+    
+    private func setupControlPanel() {
+        let screen = NSScreen.main ?? NSScreen.screens.first!
+        let screenFrame = screen.frame
+        let width: CGFloat = 860
+        let height: CGFloat = 520
+        
+        let rect = NSRect(
+            x: screenFrame.midX - (width / 2),
+            y: screenFrame.minY + 40, // 距离底部
+            width: width,
+            height: height
+        )
+        
+        let window = ControlPanelWindow(
+            contentRect: rect,
+            backing: .buffered,
+            defer: false
+        )
+        
+        // 允许视图超出安全区域并实现毛玻璃透明效果
+        let hostingView = NSHostingView(rootView: ControlPanelView().edgesIgnoringSafeArea(.all))
+        hostingView.wantsLayer = true
+        hostingView.layer?.backgroundColor = NSColor.clear.cgColor
+        
+        window.contentView = hostingView
+        window.orderFrontRegardless()
+        self.controlPanelWindow = window
     }
 }
