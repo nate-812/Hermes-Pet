@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320">
+  <defs>
+    <style>
+      .bg { fill: #f3f4f6; }
+      .panel { fill: #ffffff; stroke: #d7dbe2; stroke-width: 2; }
+      .screen { fill: #eef1f5; stroke: #c8ced8; stroke-width: 2; }
+      .card { fill: #ffffff; stroke: #cfd5df; stroke-width: 1.5; }
+      .dense { fill: #f8fafc; stroke: #d6dce5; stroke-width: 1.2; }
+      .primary { fill: #1f6feb; }
+      .dark { fill: #111827; }
+      .muted { fill: #6b7280; }
+      .soft { fill: #e6efff; }
+      .ok { fill: #21a366; }
+      .warn { fill: #d97706; }
+      .line { stroke: #c8ced8; stroke-width: 1.2; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #111827; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; fill: #6b7280; }
+      .label { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 650; fill: #111827; }
+      .small { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 520; fill: #6b7280; }
+      .tiny { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 520; fill: #6b7280; }
+      .num { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 760; fill: #111827; }
+      .mono { font-family: "SF Mono", ui-monospace, Menlo, monospace; font-size: 11px; fill: #374151; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1800" height="1320"/>
+  <text x="70" y="58" class="title">HermesMate Control Panel Layout Options</text>
+  <text x="70" y="84" class="subtitle">Goal: high density, concentrated system info, concentrated Hermes info, one clear command focus.</text>
+
+  <!-- Option A -->
+  <g transform="translate(70 130)">
+    <text x="0" y="0" class="title">A. Command Deck</text>
+    <text x="0" y="26" class="subtitle">Best default: one command focus + compact Mac/Hermes strips + dense event table.</text>
+    <rect x="0" y="52" width="790" height="500" rx="34" class="panel"/>
+    <rect x="28" y="82" width="734" height="42" rx="16" class="screen"/>
+    <circle cx="52" cy="103" r="7" class="ok"/>
+    <text x="68" y="108" class="label">Hermes OK</text>
+    <text x="186" y="108" class="small">Mac stable</text>
+    <text x="294" y="108" class="small">2 jobs</text>
+    <text x="382" y="108" class="small">0 approvals</text>
+    <rect x="626" y="91" width="112" height="24" rx="12" class="primary"/>
+    <text x="649" y="107" class="tiny" fill="#fff">Open Chat</text>
+
+    <rect x="28" y="140" width="472" height="132" rx="18" class="card"/>
+    <text x="52" y="170" class="label">Current Focus</text>
+    <text x="52" y="205" class="title" style="font-size:24px">2 jobs running</text>
+    <text x="52" y="232" class="small">Latest: "现在只开了一个Hermes后台进程是不"</text>
+    <rect x="382" y="166" width="82" height="76" rx="12" class="soft"/>
+    <text x="402" y="198" class="num">0</text>
+    <text x="398" y="220" class="tiny">Agents</text>
+
+    <rect x="516" y="140" width="222" height="132" rx="18" class="card"/>
+    <text x="538" y="170" class="label">Live Events</text>
+    <text x="538" y="197" class="mono">10:22 tool.start web</text>
+    <text x="538" y="218" class="mono">10:23 message.delta</text>
+    <text x="538" y="239" class="mono">10:24 run.complete</text>
+
+    <rect x="28" y="290" width="344" height="78" rx="16" class="card"/>
+    <text x="50" y="318" class="label">Mac</text>
+    <text x="50" y="346" class="mono">CPU 10c  MEM 16GB  DISK 87GB  UP 5d</text>
+    <rect x="394" y="290" width="344" height="78" rx="16" class="card"/>
+    <text x="416" y="318" class="label">Hermes</text>
+    <text x="416" y="346" class="mono">v0.17  Sessions 111  Tokens 10.4M  Jobs 2</text>
+
+    <rect x="28" y="386" width="710" height="126" rx="16" class="card"/>
+    <text x="50" y="415" class="label">Dense Overview Table</text>
+    <line x1="50" y1="433" x2="714" y2="433" class="line"/>
+    <text x="50" y="456" class="mono">Type      Name                    State       Updated</text>
+    <text x="50" y="482" class="mono">job       deepseek-balance-daily   scheduled   06:00</text>
+    <text x="50" y="504" class="mono">session   问候与主动帮助            active      now</text>
+  </g>
+
+  <!-- Option B -->
+  <g transform="translate(940 130)">
+    <text x="0" y="0" class="title">B. Split Inspector</text>
+    <text x="0" y="26" class="subtitle">Best for power users: left list, right inspector, compact status rail.</text>
+    <rect x="0" y="52" width="790" height="500" rx="34" class="panel"/>
+    <rect x="26" y="82" width="96" height="430" rx="18" class="screen"/>
+    <text x="48" y="118" class="label">Mac</text>
+    <text x="48" y="148" class="tiny">CPU 10c</text>
+    <text x="48" y="170" class="tiny">MEM 16G</text>
+    <text x="48" y="192" class="tiny">DISK 87G</text>
+    <line x1="48" y1="218" x2="100" y2="218" class="line"/>
+    <text x="48" y="248" class="label">Hermes</text>
+    <text x="48" y="278" class="tiny">OK</text>
+    <text x="48" y="300" class="tiny">111 sess</text>
+    <text x="48" y="322" class="tiny">2 jobs</text>
+
+    <rect x="142" y="82" width="292" height="430" rx="18" class="card"/>
+    <text x="166" y="116" class="label">Work Queue</text>
+    <rect x="166" y="140" width="244" height="64" rx="12" class="soft"/>
+    <text x="184" y="166" class="label">Current Run</text>
+    <text x="184" y="188" class="tiny">2 jobs running · no approvals</text>
+    <rect x="166" y="220" width="244" height="52" rx="12" class="dense"/>
+    <text x="184" y="250" class="small">deepseek-balance-daily</text>
+    <rect x="166" y="284" width="244" height="52" rx="12" class="dense"/>
+    <text x="184" y="314" class="small">deepseek-balance-monthly</text>
+    <rect x="166" y="348" width="244" height="52" rx="12" class="dense"/>
+    <text x="184" y="378" class="small">latest session preview</text>
+
+    <rect x="456" y="82" width="306" height="430" rx="18" class="card"/>
+    <text x="482" y="116" class="label">Inspector</text>
+    <text x="482" y="150" class="title" style="font-size:24px">Run Detail</text>
+    <text x="482" y="184" class="mono">status      running</text>
+    <text x="482" y="210" class="mono">tool        web_search</text>
+    <text x="482" y="236" class="mono">session     20260629...</text>
+    <text x="482" y="262" class="mono">tokens      10.4M month</text>
+    <line x1="482" y1="288" x2="736" y2="288" class="line"/>
+    <text x="482" y="320" class="label">Actions</text>
+    <rect x="482" y="344" width="110" height="32" rx="16" class="primary"/>
+    <text x="507" y="365" class="tiny" fill="#fff">Open Chat</text>
+    <rect x="606" y="344" width="96" height="32" rx="16" class="dense"/>
+    <text x="632" y="365" class="tiny">Stop</text>
+  </g>
+
+  <!-- Option C -->
+  <g transform="translate(70 735)">
+    <text x="0" y="0" class="title">C. Timeline Center</text>
+    <text x="0" y="26" class="subtitle">Best for agent observability: event timeline is the main object.</text>
+    <rect x="0" y="52" width="790" height="500" rx="34" class="panel"/>
+    <rect x="28" y="82" width="734" height="76" rx="18" class="card"/>
+    <text x="54" y="116" class="label">Dense Status Header</text>
+    <text x="54" y="142" class="mono">Mac CPU 10c | Mem 16GB | Disk 87GB     Hermes OK | v0.17 | 111 sessions | 2 jobs</text>
+
+    <rect x="28" y="178" width="470" height="334" rx="18" class="card"/>
+    <text x="54" y="212" class="label">Agent Timeline</text>
+    <line x1="82" y1="238" x2="82" y2="470" class="line"/>
+    <circle cx="82" cy="258" r="8" class="primary"/>
+    <text x="108" y="264" class="mono">10:22 run.started</text>
+    <circle cx="82" cy="318" r="8" class="warn"/>
+    <text x="108" y="324" class="mono">10:23 tool.start web_search</text>
+    <circle cx="82" cy="378" r="8" class="ok"/>
+    <text x="108" y="384" class="mono">10:24 tool.complete</text>
+    <circle cx="82" cy="438" r="8" class="primary"/>
+    <text x="108" y="444" class="mono">10:24 message.complete</text>
+
+    <rect x="516" y="178" width="222" height="154" rx="18" class="card"/>
+    <text x="540" y="212" class="label">Current Run</text>
+    <text x="540" y="248" class="title" style="font-size:22px">Running</text>
+    <text x="540" y="278" class="small">2 jobs · no approvals</text>
+    <rect x="516" y="352" width="222" height="160" rx="18" class="card"/>
+    <text x="540" y="386" class="label">Collapsed Details</text>
+    <text x="540" y="420" class="mono">Skills 24</text>
+    <text x="540" y="446" class="mono">Toolsets 8</text>
+    <text x="540" y="472" class="mono">Cron jobs 2</text>
+  </g>
+
+  <!-- Option D -->
+  <g transform="translate(940 735)">
+    <text x="0" y="0" class="title">D. Dense Matrix</text>
+    <text x="0" y="26" class="subtitle">Highest density: small metrics matrix, no oversized cards except command row.</text>
+    <rect x="0" y="52" width="790" height="500" rx="34" class="panel"/>
+    <rect x="28" y="82" width="734" height="92" rx="18" class="card"/>
+    <text x="54" y="122" class="title" style="font-size:25px">Ready / 2 jobs running</text>
+    <text x="54" y="150" class="small">Latest session preview and action buttons live in this single command row.</text>
+    <rect x="620" y="112" width="92" height="32" rx="16" class="primary"/>
+    <text x="640" y="133" class="tiny" fill="#fff">Chat</text>
+
+    <g transform="translate(28 196)">
+      <rect x="0" y="0" width="734" height="142" rx="18" class="card"/>
+      <text x="24" y="32" class="label">Mac Matrix</text>
+      <g transform="translate(24 52)">
+        <rect x="0" y="0" width="158" height="32" rx="8" class="dense"/><text x="12" y="21" class="mono">CPU        10c</text>
+        <rect x="176" y="0" width="158" height="32" rx="8" class="dense"/><text x="188" y="21" class="mono">Memory     16G</text>
+        <rect x="352" y="0" width="158" height="32" rx="8" class="dense"/><text x="364" y="21" class="mono">Disk       87G</text>
+        <rect x="528" y="0" width="158" height="32" rx="8" class="dense"/><text x="540" y="21" class="mono">Uptime     5d</text>
+        <rect x="0" y="48" width="334" height="32" rx="8" class="dense"/><text x="12" y="69" class="mono">Host       MacBook Pro</text>
+        <rect x="352" y="48" width="334" height="32" rx="8" class="dense"/><text x="364" y="69" class="mono">OS         macOS 15.6</text>
+      </g>
+    </g>
+
+    <g transform="translate(28 358)">
+      <rect x="0" y="0" width="734" height="132" rx="18" class="card"/>
+      <text x="24" y="32" class="label">Hermes Matrix</text>
+      <g transform="translate(24 52)">
+        <rect x="0" y="0" width="158" height="32" rx="8" class="dense"/><text x="12" y="21" class="mono">Version    0.17</text>
+        <rect x="176" y="0" width="158" height="32" rx="8" class="dense"/><text x="188" y="21" class="mono">Sessions   111</text>
+        <rect x="352" y="0" width="158" height="32" rx="8" class="dense"/><text x="364" y="21" class="mono">Tokens     10.4M</text>
+        <rect x="528" y="0" width="158" height="32" rx="8" class="dense"/><text x="540" y="21" class="mono">Jobs       2</text>
+        <rect x="0" y="48" width="216" height="32" rx="8" class="dense"/><text x="12" y="69" class="mono">Approvals  0</text>
+        <rect x="234" y="48" width="216" height="32" rx="8" class="dense"/><text x="246" y="69" class="mono">Toolsets   enabled</text>
+        <rect x="468" y="48" width="218" height="32" rx="8" class="dense"/><text x="480" y="69" class="mono">Skills     available</text>
+      </g>
+    </g>
+  </g>
+</svg>

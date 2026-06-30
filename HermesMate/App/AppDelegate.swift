@@ -161,7 +161,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         )
         
         // 允许视图超出安全区域并实现毛玻璃透明效果
-        let hostingView = NSHostingView(rootView: ControlPanelView().edgesIgnoringSafeArea(.all))
+        let hostingView = NSHostingView(
+            rootView: ControlPanelView(onOpenChat: { [weak self] in
+                self?.openChatWindow()
+            })
+            .edgesIgnoringSafeArea(.all)
+        )
         hostingView.wantsLayer = true
         hostingView.layer?.backgroundColor = NSColor.clear.cgColor
         

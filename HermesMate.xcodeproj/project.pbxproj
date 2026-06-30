@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12404F33AB8DEBB2F233847D /* 趴下动作.mov in Resources */ = {isa = PBXBuildFile; fileRef = C9B56DC968B08E1A39C4E289 /* 趴下动作.mov */; };
+		144F328C0123046D9BFC5F82 /* HermesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF4A9AF6AFDB29B3BB49D69 /* HermesAPIClient.swift */; };
 		154CAE0C54D9C97684DCFF16 /* AgentBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C84B6D4176016EF6FA56DA0 /* AgentBridge.swift */; };
 		16E70830EC259CB767D55220 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2860CD6CA99B50B6C63D85FD /* DashboardView.swift */; };
 		247243D3E91EBD058710EC9B /* ChatWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDC697AF6457463AD7105D6 /* ChatWindowController.swift */; };
@@ -23,6 +24,7 @@
 		6472A71E7A5429F84F555438 /* DesktopPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */; };
 		669580FA52DE980C91C7CC07 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453EC4CCA09F4D5A1941DCB /* SessionStore.swift */; };
 		688BA6581212DE2074AEB262 /* 正常工作.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0269AA43F5F380FC5DC2C35D /* 正常工作.mov */; };
+		6D5D9A4E33B128625925F359 /* HermesAPIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016A25197FF221B0315ADE8 /* HermesAPIModels.swift */; };
 		75011635529BD03F117F43B0 /* 疯狂状态.mov in Resources */ = {isa = PBXBuildFile; fileRef = 9EE3417376F2A6A737D68651 /* 疯狂状态.mov */; };
 		804BC61F232C17A3FDA3BB55 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0491E22D36FF757ABACADC /* EventBus.swift */; };
 		804D09634779A3FE1F300126 /* HermesMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB667F13B1B0BC0D8AB1360 /* HermesMateTests.swift */; };
@@ -39,7 +41,10 @@
 		CAE768B2E85D8698DBEB6E9C /* 关电脑.mov in Resources */ = {isa = PBXBuildFile; fileRef = 15B6184E74297896331EE3DF /* 关电脑.mov */; };
 		CBFDA01459E29F74E9F7EA30 /* HermesMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4BCD2E3BC3E23BCE6133E9 /* HermesMateApp.swift */; };
 		D52379EB1B4047981DBEB1CB /* NotchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA9071D95569C2F3838CC73 /* NotchContentView.swift */; };
+		EC6232555BEDA6C8F47FA823 /* SSEClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD926BF54D07AC26E9A8DB01 /* SSEClient.swift */; };
+		F0AC4575E01AC398D79B873F /* ControlPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6433A3C2DFDFA9D5994560BF /* ControlPanelViewModel.swift */; };
 		FDF935265C491983B718C0BB /* PikachuPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D9E560BB4345DDDCE7EF5 /* PikachuPetView.swift */; };
+		FF0A2C32BCFC2B49E331A64D /* ToolGuardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0111043A4C2068FEAB0362B /* ToolGuardOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,7 @@
 		5A2DBD4E86C2D34368167567 /* HermesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesProvider.swift; sourceTree = "<group>"; };
 		5AB0C1A6C261D4049DA7000C /* HermesMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HermesMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5E8B1173B22AAE7FDD8DFA /* HermesRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesRPC.swift; sourceTree = "<group>"; };
+		6433A3C2DFDFA9D5994560BF /* ControlPanelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelViewModel.swift; sourceTree = "<group>"; };
 		651751BD9EF72AA8F5B81162 /* NotchWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchWindow.swift; sourceTree = "<group>"; };
 		6DF13A1ECDBFAB0E495A44AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70CCC85495253565FB7AD1B2 /* VideoPetEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPetEngine.swift; sourceTree = "<group>"; };
@@ -80,11 +86,15 @@
 		9EE3417376F2A6A737D68651 /* 疯狂状态.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "疯狂状态.mov"; sourceTree = "<group>"; };
 		A1BC29D9E3B687F5B9D859F5 /* DesktopPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopPet.swift; sourceTree = "<group>"; };
 		A6C860E000802EFB2D3C62AA /* ControlPanelComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelComponents.swift; sourceTree = "<group>"; };
+		AAF4A9AF6AFDB29B3BB49D69 /* HermesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesAPIClient.swift; sourceTree = "<group>"; };
 		ABBA843B6581533E5917A405 /* HermesEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesEvent.swift; sourceTree = "<group>"; };
 		BDBD496EA579F535CB118F1C /* HermesMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HermesMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07ED50BA065038D0DA00DB7 /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
 		C9B56DC968B08E1A39C4E289 /* 趴下动作.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "趴下动作.mov"; sourceTree = "<group>"; };
+		CD926BF54D07AC26E9A8DB01 /* SSEClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEClient.swift; sourceTree = "<group>"; };
+		D0111043A4C2068FEAB0362B /* ToolGuardOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolGuardOverlay.swift; sourceTree = "<group>"; };
 		DEDC697AF6457463AD7105D6 /* ChatWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWindowController.swift; sourceTree = "<group>"; };
+		E016A25197FF221B0315ADE8 /* HermesAPIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesAPIModels.swift; sourceTree = "<group>"; };
 		E750CA5F78590C96FCC2AC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB2D9E560BB4345DDDCE7EF5 /* PikachuPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikachuPetView.swift; sourceTree = "<group>"; };
 		F426DFEE72564B2DFAB4EB15 /* SpriteEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteEngine.swift; sourceTree = "<group>"; };
@@ -106,7 +116,9 @@
 			children = (
 				A6C860E000802EFB2D3C62AA /* ControlPanelComponents.swift */,
 				54ACE5391FD939FFFDD5C672 /* ControlPanelView.swift */,
+				6433A3C2DFDFA9D5994560BF /* ControlPanelViewModel.swift */,
 				13E7F877AA766DC6A6080981 /* ControlPanelWindow.swift */,
+				D0111043A4C2068FEAB0362B /* ToolGuardOverlay.swift */,
 			);
 			path = ControlPanel;
 			sourceTree = "<group>";
@@ -114,6 +126,7 @@
 		3C00D2286E6A51D6103A270F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E016A25197FF221B0315ADE8 /* HermesAPIModels.swift */,
 				ABBA843B6581533E5917A405 /* HermesEvent.swift */,
 				5B5E8B1173B22AAE7FDD8DFA /* HermesRPC.swift */,
 				005040986DD1488A1F566306 /* HermesSession.swift */,
@@ -136,6 +149,7 @@
 				3C0491E22D36FF757ABACADC /* EventBus.swift */,
 				4453EC4CCA09F4D5A1941DCB /* SessionStore.swift */,
 				3C00D2286E6A51D6103A270F /* Models */,
+				B1FD2CCCFA209E02157A8C59 /* Networking */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -212,6 +226,15 @@
 				83FF581D44C2DC61E11F8A1E /* UI */,
 			);
 			path = HermesMate;
+			sourceTree = "<group>";
+		};
+		B1FD2CCCFA209E02157A8C59 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AAF4A9AF6AFDB29B3BB49D69 /* HermesAPIClient.swift */,
+				CD926BF54D07AC26E9A8DB01 /* SSEClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		B437D815B489B49CA6EC6651 /* Chat */ = {
@@ -366,10 +389,13 @@
 				247243D3E91EBD058710EC9B /* ChatWindowController.swift in Sources */,
 				B86A50AF845D4A244A365B88 /* ControlPanelComponents.swift in Sources */,
 				B97E8064944D06656052B82C /* ControlPanelView.swift in Sources */,
+				F0AC4575E01AC398D79B873F /* ControlPanelViewModel.swift in Sources */,
 				56DFB612EBFE56CB7677C8FF /* ControlPanelWindow.swift in Sources */,
 				16E70830EC259CB767D55220 /* DashboardView.swift in Sources */,
 				6472A71E7A5429F84F555438 /* DesktopPet.swift in Sources */,
 				804BC61F232C17A3FDA3BB55 /* EventBus.swift in Sources */,
+				144F328C0123046D9BFC5F82 /* HermesAPIClient.swift in Sources */,
+				6D5D9A4E33B128625925F359 /* HermesAPIModels.swift in Sources */,
 				BAB548B765D3C1AF542F7193 /* HermesEvent.swift in Sources */,
 				CBFDA01459E29F74E9F7EA30 /* HermesMateApp.swift in Sources */,
 				30908958B4F8DBFD722C465C /* HermesProvider.swift in Sources */,
@@ -381,8 +407,10 @@
 				4F1EF9CC79A06CEABBACB195 /* NotchStateCoordinator.swift in Sources */,
 				2C19EBFC886282419FD4946A /* NotchWindow.swift in Sources */,
 				FDF935265C491983B718C0BB /* PikachuPetView.swift in Sources */,
+				EC6232555BEDA6C8F47FA823 /* SSEClient.swift in Sources */,
 				669580FA52DE980C91C7CC07 /* SessionStore.swift in Sources */,
 				A349EA116B6765904D6CAF6B /* SpriteEngine.swift in Sources */,
+				FF0A2C32BCFC2B49E331A64D /* ToolGuardOverlay.swift in Sources */,
 				A3AFDB233C76868CF7B2EC0F /* VideoPetEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,7 +508,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
@@ -584,7 +612,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
